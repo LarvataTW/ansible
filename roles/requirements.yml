@@ -1,0 +1,92 @@
+# from Ansible Galaxy
+
+- name: ahuffman.resolv
+- name: andrewrothstein.kafka
+- name: andrewrothstein.openjdk
+- name: andrewrothstein.unarchive-deps
+- name: antoiner77.caddy
+- name: gantsign.oh-my-zsh
+- name: geerlingguy.docker
+- name: geerlingguy.haproxy
+- name: geerlingguy.kubernetes
+- name: geerlingguy.mysql
+- name: geerlingguy.nfs
+- name: geerlingguy.nginx
+- name: geerlingguy.pip
+- name: geerlingguy.rabbitmq
+- name: geerlingguy.redis
+- name: oefenweb.timezone
+- name: oefenweb.fail2ban
+- name: oefenweb.ufw
+- name: riemers.gitlab-runner
+- name: rvm.ruby
+- name: sunscrapers.python
+- name: william-yeh.prometheus
+- name: yatesr.timezone
+- name: zzet.rbenv
+
+# from GitHub, overriding the name and specifying a tag
+
+- src: https://github.com/bertvv/ansible-role-bind
+  version: master
+  name: bertvv.bind
+
+- src: https://github.com/mrlesmithjr/ansible-squid
+  version: master
+  name: mrlesmithjr.squid
+
+- src: https://github.com/willshersystems/ansible-sshd
+  version: v0.13.0
+  name: willshersystems.sshd
+
+- src: https://github.com/LarvataTW/ansible-caddy
+  version: master
+  name: larvata.caddy
+
+- src: https://github.com/LarvataTW/ansible-container-deploy
+  version: master
+  name: larvata.container-deploy
+
+- src: https://github.com/LarvataTW/ansible-docker
+  version: master
+  name: larvata.docker
+
+- src: https://github.com/LarvataTW/ansible-haproxy
+  version: master
+  name: larvata.haproxy
+
+- src: https://github.com/LarvataTW/ansible-nginx-proxy
+  version: master
+  name: larvata.nginx-proxy
+
+- src: https://github.com/LarvataTW/ansible-percona-xtradb-cluster
+  version: master
+  name: larvata.percona-xtradb-cluster
+
+- src: https://github.com/LarvataTW/ansible-proxysql
+  version: master
+  name: larvata.proxysql
+
+- src: https://github.com/LarvataTW/ansible-ubuntu
+  version: master
+  name: larvata.ubuntu
+
+- src: https://github.com/LarvataTW/ansible-gitlab-runner
+  version: master
+  name: larvata.gitlab-runner
+
+- src: https://github.com/LarvataTW/ansible-prometheus
+  version: master
+  name: larvata.prometheus
+
+- src: https://github.com/LarvataTW/ansible-netplan
+  version: master
+  name: larvata.netplan
+
+- src: https://github.com/LarvataTW/ansible-backup
+  version: master
+  name: larvata.backup
+
+- src: https://github.com/LarvataTW/ansible-proxy-setup
+  version: master
+  name: larvata.proxy-setup
