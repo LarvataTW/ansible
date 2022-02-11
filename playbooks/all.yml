@@ -1,0 +1,33 @@
+- hosts: "{{ target | default('test') }}"
+  order: inventory
+  become: yes
+  gather_facts: yes
+  any_errors_fatal: true
+
+  pre_tasks:
+    - name: Install Python for Ansible.
+      raw: bash -c "test -e /usr/bin/python3 || (apt -qqy update && apt install -qy python3-minimal)"
+      register: pythonable
+      changed_when: pythonable.stdout
+
+    - name: Install Git.
+      apt:
+        name: git
+        state: present
+        update_cache: yes
+
+    - name: Setup inventory_hostname as hostname.
+      hostname:
+        name: "{{ inventory_hostname }}"
+      tags:
+        - hostname
+
+  roles:
+    - ahuffman.resolv
+    - oefenweb.timezone
+    - larvata.proxy-setup
+    - larvata.netplan
+    - larvata.ubuntu
+    - willshersystems.sshd
+    - oefenweb.fail2ban
+    - gantsign.oh-my-zsh
