@@ -25,8 +25,10 @@
   roles:
     - ahuffman.resolv
     - oefenweb.timezone
-    - larvata.proxy-setup
-    - larvata.netplan
+    - role: larvata.proxy-setup
+      tags: [ proxy, cht ]
+    - role: larvata.netplan
+      tags: [ network, cht ]
     - larvata.ubuntu
     - willshersystems.sshd
     - oefenweb.fail2ban
