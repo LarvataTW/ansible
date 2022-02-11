@@ -1,0 +1,14 @@
+- hosts: "{{ target | default('test') }}"
+  order: inventory
+  become: yes
+  gather_facts: yes
+
+  roles:
+    - ahuffman.resolv
+    - bertvv.bind
+
+  post_tasks:
+    - name: reload rndc service to load new records
+      shell: "rndc freeze && rndc reload && rndc thaw"
+      tags:
+        - reload-rndc
