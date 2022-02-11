@@ -1,0 +1,8 @@
+- hosts: "{{ target | default('test') }}"
+  order: inventory
+  become: yes
+  gather_facts: yes
+
+  tasks:
+    - debug:
+        msg: "{{ playbook_dir }}/../secrets/{{ inventory_dir | basename }}/vault.yml"
