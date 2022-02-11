@@ -1,0 +1,52 @@
+- hosts: "{{ target | default('test') }}"
+  order: inventory
+  become: yes
+  gather_facts: yes
+  any_errors_fatal: true
+
+  roles:
+    - mrlesmithjr.squid
+
+  post_tasks:
+    - sysctl:
+        name: net.ipv4.ip_forward
+        value: '1'
+        sysctl_set: yes
+        state: present
+        reload: yes
+
+    - name: 客製化 Squid 設定
+      blockinfile:
+        path: /etc/squid/squid.conf
+        backup: yes
+        block: |
+          cache_dir ufs /var/spool/squid 10240 16 256
+          maximum_object_size 204800 KB
+          cache_swap_low 90
+          cache_swap_high 95
+          cache_mem 512 MB
+
+          cache_log /var/log/squid/cache.log
+          cache_access_log /var/log/squid/access.log
+          cache_store_log /var/log/squid/store.log
+
+          acl no_cache_php urlpath_regex \.php$
+          cache deny no_cache_php
+
+    - name: 重置 Squid 設定
+      shell: squid -k reconfigure
+      become: yes
+
+    - name: 關閉 Squid
+      service:
+        name: squid
+        state: stopped
+
+    - name: 建立 Squid Cache 目錄
+      shell: squid -z
+      become: yes
+
+    - name: 啟動 Squid
+      service:
+        name: squid
+        state: started
