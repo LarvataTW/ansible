@@ -1,0 +1,23 @@
+- hosts: "{{ target | default('test') }}"
+  order: inventory
+  gather_facts: yes
+
+  pre_tasks:
+    - name: Ansible ping
+      ping:
+
+  tasks:
+    - name: Change Hostname
+      become: yes
+      hostname:
+        name: "{{ inventory_hostname }}"
+      tags:
+        - hostname
+
+  post_tasks:
+    - name: Show Current Time
+      become: no
+      command: date
+      register: show_current_time
+
+    - debug: var=show_current_time.stdout_lines
