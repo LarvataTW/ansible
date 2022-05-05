@@ -1,5 +1,6 @@
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
+ansible_ssh_extra_args='-o ControlMaster=auto -o ControlPath=/tmp/%h-%p-%r.sock -o StrictHostKeyChecking=no'
 
 {% for inventory in inventories %}
 [{{ inventory.name }}:children]
