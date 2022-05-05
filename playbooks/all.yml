@@ -1,7 +1,7 @@
 - hosts: "{{ target | default('test') }}"
   order: inventory
   become: yes
-  gather_facts: yes
+  gather_facts: no
   any_errors_fatal: true
 
   pre_tasks:
@@ -10,26 +10,7 @@
       register: pythonable
       changed_when: pythonable.stdout
 
-    - name: Install Git.
-      apt:
-        name: git
-        state: present
-        update_cache: yes
-
-    - name: Setup inventory_hostname as hostname.
-      hostname:
-        name: "{{ inventory_hostname }}"
-      tags:
-        - hostname
-
   roles:
-    - ahuffman.resolv
-    - oefenweb.timezone
-    - role: larvata.proxy-setup
-      tags: [ proxy, cht ]
-    - role: larvata.netplan
-      tags: [ network, cht ]
-    - larvata.ubuntu
     - willshersystems.sshd
+    - oefenweb.timezone
     - oefenweb.fail2ban
-    - gantsign.oh-my-zsh

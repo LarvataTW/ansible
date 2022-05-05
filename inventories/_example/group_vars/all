@@ -1,0 +1,25 @@
+---
+
+# willshersystems.sshd
+
+sshd:
+  Compression: true
+  GSSAPIAuthentication: no
+  PasswordAuthentication: yes
+  PermitRootLogin: no
+  Port: 22
+  ListenAddress:
+    - "0.0.0.0"
+
+# oefenweb.timezone
+
+timezone_zone: Asia/Taipei
+
+# oefenweb.fail2ban
+
+fail2ban_bantime: 600
+fail2ban_maxretry: 5
+fail2ban_ignoreips:
+  - 192.168.200.0/24
+  - 127.0.0.1/8
+  - ::1
