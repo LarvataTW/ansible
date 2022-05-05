@@ -29,6 +29,13 @@ RUN echo "===> Installing sudo to emulate normal OS behavior..."  && \
     mkdir -p /etc/ansible                        && \
     echo 'localhost' > /etc/ansible/hosts
 
+RUN mkdir -p /devops
+COPY ./roles /devops/roles/
+COPY ./collections /devops/collections/
+
+WORKDIR /devops
+RUN ansible-galaxy install --ignore-errors -r roles/requirements.yml
+RUN ansible-galaxy collection install --ignore-errors -r collections/requirements.yml
 
 # default command: display Ansible version
 CMD [ "ansible-playbook", "--version" ]
