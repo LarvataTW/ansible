@@ -1,16 +1,24 @@
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
 
-{% for server in servers  %}
-[{{ server.name }}]
-  {% for hostname, ip in server.hosts.items() %}
+{% for inventory in inventories %}
+[{{ inventory.name }}:children]
+{% for group in inventory.groups %}
+{{ group.name }}
+{% endfor %}
+
+{% for group in inventory.groups %}
+[{{ group.name }}]
+  {% for hostname, ip in group.hosts.items() %}
     {{ hostname }} ansible_host={{ ip -}}
-    {% if server.extra %}
-      {% for key, value in server.extra.items() %}
+    {% if group.extra %}
+      {% for key, value in group.extra.items() %}
         {{ key }}={{ value -}}
       {% endfor %}
     {% endif %}
 
   {% endfor %}
+
+{% endfor %}
 
 {% endfor %}
