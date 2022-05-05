@@ -1,6 +1,33 @@
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
 
+[vlan101:children]
+vlan101.a
+vlan101.b
+vlan101.c
+vlan101.d
+vlan101.e
+vlan101.f
+vlan101.g
+vlan101.h
+vlan101.i
+vlan101.j
+vlan101.k
+vlan101.l
+vlan101.n
+vlan101.m
+vlan101.o
+vlan101.p
+vlan101.q
+vlan101.r
+vlan101.s
+vlan101.t
+vlan101.u
+vlan101.v
+vlan101.w
+vlan101.x
+vlan101.y
+
 [vlan101.a]
 vlan101.1 ansible_host=192.168.101.1
 vlan101.2 ansible_host=192.168.101.2
@@ -304,6 +331,34 @@ vlan101.251 ansible_host=192.168.101.251
 vlan101.252 ansible_host=192.168.101.252
 vlan101.253 ansible_host=192.168.101.253
 vlan101.254 ansible_host=192.168.101.254
+
+
+[vlan10:children]
+vlan10.a
+vlan10.b
+vlan10.c
+vlan10.d
+vlan10.e
+vlan10.f
+vlan10.g
+vlan10.h
+vlan10.i
+vlan10.j
+vlan10.k
+vlan10.l
+vlan10.n
+vlan10.m
+vlan10.o
+vlan10.p
+vlan10.q
+vlan10.r
+vlan10.s
+vlan10.t
+vlan10.u
+vlan10.v
+vlan10.w
+vlan10.x
+vlan10.y
 
 [vlan10.a]
 vlan10.1 ansible_host=192.168.10.1
@@ -609,6 +664,34 @@ vlan10.252 ansible_host=192.168.10.252
 vlan10.253 ansible_host=192.168.10.253
 vlan10.254 ansible_host=192.168.10.254
 
+
+[vlan20:children]
+vlan20.a
+vlan20.b
+vlan20.c
+vlan20.d
+vlan20.e
+vlan20.f
+vlan20.g
+vlan20.h
+vlan20.i
+vlan20.j
+vlan20.k
+vlan20.l
+vlan20.n
+vlan20.m
+vlan20.o
+vlan20.p
+vlan20.q
+vlan20.r
+vlan20.s
+vlan20.t
+vlan20.u
+vlan20.v
+vlan20.w
+vlan20.x
+vlan20.y
+
 [vlan20.a]
 vlan20.1 ansible_host=192.168.20.1
 vlan20.2 ansible_host=192.168.20.2
@@ -912,6 +995,34 @@ vlan20.251 ansible_host=192.168.20.251
 vlan20.252 ansible_host=192.168.20.252
 vlan20.253 ansible_host=192.168.20.253
 vlan20.254 ansible_host=192.168.20.254
+
+
+[vlan30:children]
+vlan30.a
+vlan30.b
+vlan30.c
+vlan30.d
+vlan30.e
+vlan30.f
+vlan30.g
+vlan30.h
+vlan30.i
+vlan30.j
+vlan30.k
+vlan30.l
+vlan30.n
+vlan30.m
+vlan30.o
+vlan30.p
+vlan30.q
+vlan30.r
+vlan30.s
+vlan30.t
+vlan30.u
+vlan30.v
+vlan30.w
+vlan30.x
+vlan30.y
 
 [vlan30.a]
 vlan30.1 ansible_host=192.168.30.1
@@ -1217,6 +1328,34 @@ vlan30.252 ansible_host=192.168.30.252
 vlan30.253 ansible_host=192.168.30.253
 vlan30.254 ansible_host=192.168.30.254
 
+
+[vlan40:children]
+vlan40.a
+vlan40.b
+vlan40.c
+vlan40.d
+vlan40.e
+vlan40.f
+vlan40.g
+vlan40.h
+vlan40.i
+vlan40.j
+vlan40.k
+vlan40.l
+vlan40.n
+vlan40.m
+vlan40.o
+vlan40.p
+vlan40.q
+vlan40.r
+vlan40.s
+vlan40.t
+vlan40.u
+vlan40.v
+vlan40.w
+vlan40.x
+vlan40.y
+
 [vlan40.a]
 vlan40.1 ansible_host=192.168.40.1
 vlan40.2 ansible_host=192.168.40.2
@@ -1520,6 +1659,34 @@ vlan40.251 ansible_host=192.168.40.251
 vlan40.252 ansible_host=192.168.40.252
 vlan40.253 ansible_host=192.168.40.253
 vlan40.254 ansible_host=192.168.40.254
+
+
+[vlan50:children]
+vlan50.a
+vlan50.b
+vlan50.c
+vlan50.d
+vlan50.e
+vlan50.f
+vlan50.g
+vlan50.h
+vlan50.i
+vlan50.j
+vlan50.k
+vlan50.l
+vlan50.n
+vlan50.m
+vlan50.o
+vlan50.p
+vlan50.q
+vlan50.r
+vlan50.s
+vlan50.t
+vlan50.u
+vlan50.v
+vlan50.w
+vlan50.x
+vlan50.y
 
 [vlan50.a]
 vlan50.1 ansible_host=192.168.50.1
@@ -1825,6 +1992,34 @@ vlan50.252 ansible_host=192.168.50.252
 vlan50.253 ansible_host=192.168.50.253
 vlan50.254 ansible_host=192.168.50.254
 
+
+[vlan60:children]
+vlan60.a
+vlan60.b
+vlan60.c
+vlan60.d
+vlan60.e
+vlan60.f
+vlan60.g
+vlan60.h
+vlan60.i
+vlan60.j
+vlan60.k
+vlan60.l
+vlan60.n
+vlan60.m
+vlan60.o
+vlan60.p
+vlan60.q
+vlan60.r
+vlan60.s
+vlan60.t
+vlan60.u
+vlan60.v
+vlan60.w
+vlan60.x
+vlan60.y
+
 [vlan60.a]
 vlan60.1 ansible_host=192.168.60.1
 vlan60.2 ansible_host=192.168.60.2
@@ -2129,309 +2324,58 @@ vlan60.252 ansible_host=192.168.60.252
 vlan60.253 ansible_host=192.168.60.253
 vlan60.254 ansible_host=192.168.60.254
 
-[vlan70.a]
-vlan70.1 ansible_host=192.168.70.1
-vlan70.2 ansible_host=192.168.70.2
-vlan70.3 ansible_host=192.168.70.3
-vlan70.4 ansible_host=192.168.70.4
-vlan70.5 ansible_host=192.168.70.5
-vlan70.6 ansible_host=192.168.70.6
-vlan70.7 ansible_host=192.168.70.7
-vlan70.8 ansible_host=192.168.70.8
-vlan70.9 ansible_host=192.168.70.9
-vlan70.10 ansible_host=192.168.70.10
 
-[vlan70.b]
-vlan70.11 ansible_host=192.168.70.11
-vlan70.12 ansible_host=192.168.70.12
-vlan70.13 ansible_host=192.168.70.13
-vlan70.14 ansible_host=192.168.70.14
-vlan70.15 ansible_host=192.168.70.15
-vlan70.16 ansible_host=192.168.70.16
-vlan70.17 ansible_host=192.168.70.17
-vlan70.18 ansible_host=192.168.70.18
-vlan70.19 ansible_host=192.168.70.19
-vlan70.20 ansible_host=192.168.70.20
-
-[vlan70.c]
-vlan70.21 ansible_host=192.168.70.21
-vlan70.22 ansible_host=192.168.70.22
-vlan70.23 ansible_host=192.168.70.23
-vlan70.24 ansible_host=192.168.70.24
-vlan70.25 ansible_host=192.168.70.25
-vlan70.26 ansible_host=192.168.70.26
-vlan70.27 ansible_host=192.168.70.27
-vlan70.28 ansible_host=192.168.70.28
-vlan70.29 ansible_host=192.168.70.29
-vlan70.30 ansible_host=192.168.70.30
-
-[vlan70.d]
-vlan70.31 ansible_host=192.168.70.31
-vlan70.32 ansible_host=192.168.70.32
-vlan70.33 ansible_host=192.168.70.33
-vlan70.34 ansible_host=192.168.70.34
-vlan70.35 ansible_host=192.168.70.35
-vlan70.36 ansible_host=192.168.70.36
-vlan70.37 ansible_host=192.168.70.37
-vlan70.38 ansible_host=192.168.70.38
-vlan70.39 ansible_host=192.168.70.39
-vlan70.40 ansible_host=192.168.70.40
-
-[vlan70.e]
-vlan70.41 ansible_host=192.168.70.41
-vlan70.42 ansible_host=192.168.70.42
-vlan70.43 ansible_host=192.168.70.43
-vlan70.44 ansible_host=192.168.70.44
-vlan70.45 ansible_host=192.168.70.45
-vlan70.46 ansible_host=192.168.70.46
-vlan70.47 ansible_host=192.168.70.47
-vlan70.48 ansible_host=192.168.70.48
-vlan70.49 ansible_host=192.168.70.49
-vlan70.50 ansible_host=192.168.70.50
-
-[vlan70.f]
-vlan70.51 ansible_host=192.168.70.51
-vlan70.52 ansible_host=192.168.70.52
-vlan70.53 ansible_host=192.168.70.53
-vlan70.54 ansible_host=192.168.70.54
-vlan70.55 ansible_host=192.168.70.55
-vlan70.56 ansible_host=192.168.70.56
-vlan70.57 ansible_host=192.168.70.57
-vlan70.58 ansible_host=192.168.70.58
-vlan70.59 ansible_host=192.168.70.59
-vlan70.60 ansible_host=192.168.70.60
-
-[vlan70.g]
-vlan70.61 ansible_host=192.168.70.61
-vlan70.62 ansible_host=192.168.70.62
-vlan70.63 ansible_host=192.168.70.63
-vlan70.64 ansible_host=192.168.70.64
-vlan70.65 ansible_host=192.168.70.65
-vlan70.66 ansible_host=192.168.70.66
-vlan70.67 ansible_host=192.168.70.67
-vlan70.68 ansible_host=192.168.70.68
-vlan70.69 ansible_host=192.168.70.69
-vlan70.70 ansible_host=192.168.70.70
-
-[vlan70.h]
-vlan70.71 ansible_host=192.168.70.71
-vlan70.72 ansible_host=192.168.70.72
-vlan70.73 ansible_host=192.168.70.73
-vlan70.74 ansible_host=192.168.70.74
-vlan70.75 ansible_host=192.168.70.75
-vlan70.76 ansible_host=192.168.70.76
-vlan70.77 ansible_host=192.168.70.77
-vlan70.78 ansible_host=192.168.70.78
-vlan70.79 ansible_host=192.168.70.79
-vlan70.80 ansible_host=192.168.70.80
-
-[vlan70.i]
-vlan70.81 ansible_host=192.168.70.81
-vlan70.82 ansible_host=192.168.70.82
-vlan70.83 ansible_host=192.168.70.83
-vlan70.84 ansible_host=192.168.70.84
-vlan70.85 ansible_host=192.168.70.85
-vlan70.86 ansible_host=192.168.70.86
-vlan70.87 ansible_host=192.168.70.87
-vlan70.88 ansible_host=192.168.70.88
-vlan70.89 ansible_host=192.168.70.89
-vlan70.90 ansible_host=192.168.70.90
-
-[vlan70.j]
-vlan70.91 ansible_host=192.168.70.91
-vlan70.92 ansible_host=192.168.70.92
-vlan70.93 ansible_host=192.168.70.93
-vlan70.94 ansible_host=192.168.70.94
-vlan70.95 ansible_host=192.168.70.95
-vlan70.96 ansible_host=192.168.70.96
-vlan70.97 ansible_host=192.168.70.97
-vlan70.98 ansible_host=192.168.70.98
-vlan70.99 ansible_host=192.168.70.99
-vlan70.100 ansible_host=192.168.70.100
-
-[vlan70.k]
-vlan70.101 ansible_host=192.168.70.101
-vlan70.102 ansible_host=192.168.70.102
-vlan70.103 ansible_host=192.168.70.103
-vlan70.104 ansible_host=192.168.70.104
-vlan70.105 ansible_host=192.168.70.105
-vlan70.106 ansible_host=192.168.70.106
-vlan70.107 ansible_host=192.168.70.107
-vlan70.108 ansible_host=192.168.70.108
-vlan70.109 ansible_host=192.168.70.109
-vlan70.110 ansible_host=192.168.70.110
-
-[vlan70.l]
-vlan70.111 ansible_host=192.168.70.111
-vlan70.112 ansible_host=192.168.70.112
-vlan70.113 ansible_host=192.168.70.113
-vlan70.114 ansible_host=192.168.70.114
-vlan70.115 ansible_host=192.168.70.115
-vlan70.116 ansible_host=192.168.70.116
-vlan70.117 ansible_host=192.168.70.117
-vlan70.118 ansible_host=192.168.70.118
-vlan70.119 ansible_host=192.168.70.119
-vlan70.120 ansible_host=192.168.70.120
-
-[vlan70.n]
-vlan70.121 ansible_host=192.168.70.121
-vlan70.122 ansible_host=192.168.70.122
-vlan70.123 ansible_host=192.168.70.123
-vlan70.124 ansible_host=192.168.70.124
-vlan70.125 ansible_host=192.168.70.125
-vlan70.126 ansible_host=192.168.70.126
-vlan70.127 ansible_host=192.168.70.127
-vlan70.128 ansible_host=192.168.70.128
-vlan70.129 ansible_host=192.168.70.129
-vlan70.130 ansible_host=192.168.70.130
-
-[vlan70.m]
-vlan70.131 ansible_host=192.168.70.131
-vlan70.132 ansible_host=192.168.70.132
-vlan70.133 ansible_host=192.168.70.133
-vlan70.134 ansible_host=192.168.70.134
-vlan70.135 ansible_host=192.168.70.135
-vlan70.136 ansible_host=192.168.70.136
-vlan70.137 ansible_host=192.168.70.137
-vlan70.138 ansible_host=192.168.70.138
-vlan70.139 ansible_host=192.168.70.139
-vlan70.140 ansible_host=192.168.70.140
-
-[vlan70.o]
-vlan70.141 ansible_host=192.168.70.141
-vlan70.142 ansible_host=192.168.70.142
-vlan70.143 ansible_host=192.168.70.143
-vlan70.144 ansible_host=192.168.70.144
-vlan70.145 ansible_host=192.168.70.145
-vlan70.146 ansible_host=192.168.70.146
-vlan70.147 ansible_host=192.168.70.147
-vlan70.148 ansible_host=192.168.70.148
-vlan70.149 ansible_host=192.168.70.149
-vlan70.150 ansible_host=192.168.70.150
-
-[vlan70.p]
-vlan70.151 ansible_host=192.168.70.151
-vlan70.152 ansible_host=192.168.70.152
-vlan70.153 ansible_host=192.168.70.153
-vlan70.154 ansible_host=192.168.70.154
-vlan70.155 ansible_host=192.168.70.155
-vlan70.156 ansible_host=192.168.70.156
-vlan70.157 ansible_host=192.168.70.157
-vlan70.158 ansible_host=192.168.70.158
-vlan70.159 ansible_host=192.168.70.159
-vlan70.160 ansible_host=192.168.70.160
-
-[vlan70.q]
-vlan70.161 ansible_host=192.168.70.161
-vlan70.162 ansible_host=192.168.70.162
-vlan70.163 ansible_host=192.168.70.163
-vlan70.164 ansible_host=192.168.70.164
-vlan70.165 ansible_host=192.168.70.165
-vlan70.166 ansible_host=192.168.70.166
-vlan70.167 ansible_host=192.168.70.167
-vlan70.168 ansible_host=192.168.70.168
-vlan70.169 ansible_host=192.168.70.169
-vlan70.170 ansible_host=192.168.70.170
-
-[vlan70.r]
-vlan70.171 ansible_host=192.168.70.171
-vlan70.172 ansible_host=192.168.70.172
-vlan70.173 ansible_host=192.168.70.173
-vlan70.174 ansible_host=192.168.70.174
-vlan70.175 ansible_host=192.168.70.175
-vlan70.176 ansible_host=192.168.70.176
-vlan70.177 ansible_host=192.168.70.177
-vlan70.178 ansible_host=192.168.70.178
-vlan70.179 ansible_host=192.168.70.179
-vlan70.180 ansible_host=192.168.70.180
-
-[vlan70.s]
-vlan70.181 ansible_host=192.168.70.181
-vlan70.182 ansible_host=192.168.70.182
-vlan70.183 ansible_host=192.168.70.183
-vlan70.184 ansible_host=192.168.70.184
-vlan70.185 ansible_host=192.168.70.185
-vlan70.186 ansible_host=192.168.70.186
-vlan70.187 ansible_host=192.168.70.187
-vlan70.188 ansible_host=192.168.70.188
-vlan70.189 ansible_host=192.168.70.189
-vlan70.190 ansible_host=192.168.70.190
-
-[vlan70.t]
-vlan70.191 ansible_host=192.168.70.191
-vlan70.192 ansible_host=192.168.70.192
-vlan70.193 ansible_host=192.168.70.193
-vlan70.194 ansible_host=192.168.70.194
-vlan70.195 ansible_host=192.168.70.195
-vlan70.196 ansible_host=192.168.70.196
-vlan70.197 ansible_host=192.168.70.197
-vlan70.198 ansible_host=192.168.70.198
-vlan70.199 ansible_host=192.168.70.199
-vlan70.200 ansible_host=192.168.70.200
-
-[vlan70.u]
-vlan70.201 ansible_host=192.168.70.201
-vlan70.202 ansible_host=192.168.70.202
-vlan70.203 ansible_host=192.168.70.203
-vlan70.204 ansible_host=192.168.70.204
-vlan70.205 ansible_host=192.168.70.205
-vlan70.206 ansible_host=192.168.70.206
-vlan70.207 ansible_host=192.168.70.207
-vlan70.208 ansible_host=192.168.70.208
-vlan70.209 ansible_host=192.168.70.209
-vlan70.210 ansible_host=192.168.70.210
-
-[vlan70.v]
-vlan70.211 ansible_host=192.168.70.211
-vlan70.212 ansible_host=192.168.70.212
-vlan70.213 ansible_host=192.168.70.213
-vlan70.214 ansible_host=192.168.70.214
-vlan70.215 ansible_host=192.168.70.215
-vlan70.216 ansible_host=192.168.70.216
-vlan70.217 ansible_host=192.168.70.217
-vlan70.218 ansible_host=192.168.70.218
-vlan70.219 ansible_host=192.168.70.219
-vlan70.220 ansible_host=192.168.70.220
-
-[vlan70.w]
-vlan70.221 ansible_host=192.168.70.221
-vlan70.222 ansible_host=192.168.70.222
-vlan70.223 ansible_host=192.168.70.223
-vlan70.224 ansible_host=192.168.70.224
-vlan70.225 ansible_host=192.168.70.225
-vlan70.226 ansible_host=192.168.70.226
-vlan70.227 ansible_host=192.168.70.227
-vlan70.228 ansible_host=192.168.70.228
-vlan70.229 ansible_host=192.168.70.229
-vlan70.230 ansible_host=192.168.70.230
-
-[vlan70.x]
-vlan70.231 ansible_host=192.168.70.231
-vlan70.232 ansible_host=192.168.70.232
-vlan70.233 ansible_host=192.168.70.233
-vlan70.234 ansible_host=192.168.70.234
-vlan70.235 ansible_host=192.168.70.235
-vlan70.236 ansible_host=192.168.70.236
-vlan70.237 ansible_host=192.168.70.237
-vlan70.238 ansible_host=192.168.70.238
-vlan70.239 ansible_host=192.168.70.239
-vlan70.240 ansible_host=192.168.70.240
-
-[vlan70.y]
-vlan70.241 ansible_host=192.168.70.241
-vlan70.242 ansible_host=192.168.70.242
-vlan70.243 ansible_host=192.168.70.243
-vlan70.244 ansible_host=192.168.70.244
-vlan70.245 ansible_host=192.168.70.245
-vlan70.246 ansible_host=192.168.70.246
-vlan70.247 ansible_host=192.168.70.247
-vlan70.248 ansible_host=192.168.70.248
-vlan70.249 ansible_host=192.168.70.249
-vlan70.250 ansible_host=192.168.70.250
-vlan70.251 ansible_host=192.168.70.251
-vlan70.252 ansible_host=192.168.70.252
-vlan70.253 ansible_host=192.168.70.253
-vlan70.254 ansible_host=192.168.70.254
+[vlan70:children]
+vlan70.a
+vlan70.b
+vlan70.c
+vlan70.d
+vlan70.e
+vlan70.f
+vlan70.g
+vlan70.h
+vlan70.i
+vlan70.j
+vlan70.k
+vlan70.l
+vlan70.n
+vlan70.m
+vlan70.o
+vlan70.p
+vlan70.q
+vlan70.r
+vlan70.s
+vlan70.t
+vlan70.u
+vlan70.v
+vlan70.w
+vlan70.x
+vlan70.y
+vlan70.a
+vlan70.b
+vlan70.c
+vlan70.d
+vlan70.e
+vlan70.f
+vlan70.g
+vlan70.h
+vlan70.i
+vlan70.j
+vlan70.k
+vlan70.l
+vlan70.n
+vlan70.m
+vlan70.o
+vlan70.p
+vlan70.q
+vlan70.r
+vlan70.s
+vlan70.t
+vlan70.u
+vlan70.v
+vlan70.w
+vlan70.x
+vlan70.y
 
 [vlan70.a]
 vlan70.1 ansible_host=192.168.70.1
@@ -2736,6 +2680,363 @@ vlan70.251 ansible_host=192.168.70.251
 vlan70.252 ansible_host=192.168.70.252
 vlan70.253 ansible_host=192.168.70.253
 vlan70.254 ansible_host=192.168.70.254
+
+[vlan70.a]
+vlan70.1 ansible_host=192.168.70.1
+vlan70.2 ansible_host=192.168.70.2
+vlan70.3 ansible_host=192.168.70.3
+vlan70.4 ansible_host=192.168.70.4
+vlan70.5 ansible_host=192.168.70.5
+vlan70.6 ansible_host=192.168.70.6
+vlan70.7 ansible_host=192.168.70.7
+vlan70.8 ansible_host=192.168.70.8
+vlan70.9 ansible_host=192.168.70.9
+vlan70.10 ansible_host=192.168.70.10
+
+[vlan70.b]
+vlan70.11 ansible_host=192.168.70.11
+vlan70.12 ansible_host=192.168.70.12
+vlan70.13 ansible_host=192.168.70.13
+vlan70.14 ansible_host=192.168.70.14
+vlan70.15 ansible_host=192.168.70.15
+vlan70.16 ansible_host=192.168.70.16
+vlan70.17 ansible_host=192.168.70.17
+vlan70.18 ansible_host=192.168.70.18
+vlan70.19 ansible_host=192.168.70.19
+vlan70.20 ansible_host=192.168.70.20
+
+[vlan70.c]
+vlan70.21 ansible_host=192.168.70.21
+vlan70.22 ansible_host=192.168.70.22
+vlan70.23 ansible_host=192.168.70.23
+vlan70.24 ansible_host=192.168.70.24
+vlan70.25 ansible_host=192.168.70.25
+vlan70.26 ansible_host=192.168.70.26
+vlan70.27 ansible_host=192.168.70.27
+vlan70.28 ansible_host=192.168.70.28
+vlan70.29 ansible_host=192.168.70.29
+vlan70.30 ansible_host=192.168.70.30
+
+[vlan70.d]
+vlan70.31 ansible_host=192.168.70.31
+vlan70.32 ansible_host=192.168.70.32
+vlan70.33 ansible_host=192.168.70.33
+vlan70.34 ansible_host=192.168.70.34
+vlan70.35 ansible_host=192.168.70.35
+vlan70.36 ansible_host=192.168.70.36
+vlan70.37 ansible_host=192.168.70.37
+vlan70.38 ansible_host=192.168.70.38
+vlan70.39 ansible_host=192.168.70.39
+vlan70.40 ansible_host=192.168.70.40
+
+[vlan70.e]
+vlan70.41 ansible_host=192.168.70.41
+vlan70.42 ansible_host=192.168.70.42
+vlan70.43 ansible_host=192.168.70.43
+vlan70.44 ansible_host=192.168.70.44
+vlan70.45 ansible_host=192.168.70.45
+vlan70.46 ansible_host=192.168.70.46
+vlan70.47 ansible_host=192.168.70.47
+vlan70.48 ansible_host=192.168.70.48
+vlan70.49 ansible_host=192.168.70.49
+vlan70.50 ansible_host=192.168.70.50
+
+[vlan70.f]
+vlan70.51 ansible_host=192.168.70.51
+vlan70.52 ansible_host=192.168.70.52
+vlan70.53 ansible_host=192.168.70.53
+vlan70.54 ansible_host=192.168.70.54
+vlan70.55 ansible_host=192.168.70.55
+vlan70.56 ansible_host=192.168.70.56
+vlan70.57 ansible_host=192.168.70.57
+vlan70.58 ansible_host=192.168.70.58
+vlan70.59 ansible_host=192.168.70.59
+vlan70.60 ansible_host=192.168.70.60
+
+[vlan70.g]
+vlan70.61 ansible_host=192.168.70.61
+vlan70.62 ansible_host=192.168.70.62
+vlan70.63 ansible_host=192.168.70.63
+vlan70.64 ansible_host=192.168.70.64
+vlan70.65 ansible_host=192.168.70.65
+vlan70.66 ansible_host=192.168.70.66
+vlan70.67 ansible_host=192.168.70.67
+vlan70.68 ansible_host=192.168.70.68
+vlan70.69 ansible_host=192.168.70.69
+vlan70.70 ansible_host=192.168.70.70
+
+[vlan70.h]
+vlan70.71 ansible_host=192.168.70.71
+vlan70.72 ansible_host=192.168.70.72
+vlan70.73 ansible_host=192.168.70.73
+vlan70.74 ansible_host=192.168.70.74
+vlan70.75 ansible_host=192.168.70.75
+vlan70.76 ansible_host=192.168.70.76
+vlan70.77 ansible_host=192.168.70.77
+vlan70.78 ansible_host=192.168.70.78
+vlan70.79 ansible_host=192.168.70.79
+vlan70.80 ansible_host=192.168.70.80
+
+[vlan70.i]
+vlan70.81 ansible_host=192.168.70.81
+vlan70.82 ansible_host=192.168.70.82
+vlan70.83 ansible_host=192.168.70.83
+vlan70.84 ansible_host=192.168.70.84
+vlan70.85 ansible_host=192.168.70.85
+vlan70.86 ansible_host=192.168.70.86
+vlan70.87 ansible_host=192.168.70.87
+vlan70.88 ansible_host=192.168.70.88
+vlan70.89 ansible_host=192.168.70.89
+vlan70.90 ansible_host=192.168.70.90
+
+[vlan70.j]
+vlan70.91 ansible_host=192.168.70.91
+vlan70.92 ansible_host=192.168.70.92
+vlan70.93 ansible_host=192.168.70.93
+vlan70.94 ansible_host=192.168.70.94
+vlan70.95 ansible_host=192.168.70.95
+vlan70.96 ansible_host=192.168.70.96
+vlan70.97 ansible_host=192.168.70.97
+vlan70.98 ansible_host=192.168.70.98
+vlan70.99 ansible_host=192.168.70.99
+vlan70.100 ansible_host=192.168.70.100
+
+[vlan70.k]
+vlan70.101 ansible_host=192.168.70.101
+vlan70.102 ansible_host=192.168.70.102
+vlan70.103 ansible_host=192.168.70.103
+vlan70.104 ansible_host=192.168.70.104
+vlan70.105 ansible_host=192.168.70.105
+vlan70.106 ansible_host=192.168.70.106
+vlan70.107 ansible_host=192.168.70.107
+vlan70.108 ansible_host=192.168.70.108
+vlan70.109 ansible_host=192.168.70.109
+vlan70.110 ansible_host=192.168.70.110
+
+[vlan70.l]
+vlan70.111 ansible_host=192.168.70.111
+vlan70.112 ansible_host=192.168.70.112
+vlan70.113 ansible_host=192.168.70.113
+vlan70.114 ansible_host=192.168.70.114
+vlan70.115 ansible_host=192.168.70.115
+vlan70.116 ansible_host=192.168.70.116
+vlan70.117 ansible_host=192.168.70.117
+vlan70.118 ansible_host=192.168.70.118
+vlan70.119 ansible_host=192.168.70.119
+vlan70.120 ansible_host=192.168.70.120
+
+[vlan70.n]
+vlan70.121 ansible_host=192.168.70.121
+vlan70.122 ansible_host=192.168.70.122
+vlan70.123 ansible_host=192.168.70.123
+vlan70.124 ansible_host=192.168.70.124
+vlan70.125 ansible_host=192.168.70.125
+vlan70.126 ansible_host=192.168.70.126
+vlan70.127 ansible_host=192.168.70.127
+vlan70.128 ansible_host=192.168.70.128
+vlan70.129 ansible_host=192.168.70.129
+vlan70.130 ansible_host=192.168.70.130
+
+[vlan70.m]
+vlan70.131 ansible_host=192.168.70.131
+vlan70.132 ansible_host=192.168.70.132
+vlan70.133 ansible_host=192.168.70.133
+vlan70.134 ansible_host=192.168.70.134
+vlan70.135 ansible_host=192.168.70.135
+vlan70.136 ansible_host=192.168.70.136
+vlan70.137 ansible_host=192.168.70.137
+vlan70.138 ansible_host=192.168.70.138
+vlan70.139 ansible_host=192.168.70.139
+vlan70.140 ansible_host=192.168.70.140
+
+[vlan70.o]
+vlan70.141 ansible_host=192.168.70.141
+vlan70.142 ansible_host=192.168.70.142
+vlan70.143 ansible_host=192.168.70.143
+vlan70.144 ansible_host=192.168.70.144
+vlan70.145 ansible_host=192.168.70.145
+vlan70.146 ansible_host=192.168.70.146
+vlan70.147 ansible_host=192.168.70.147
+vlan70.148 ansible_host=192.168.70.148
+vlan70.149 ansible_host=192.168.70.149
+vlan70.150 ansible_host=192.168.70.150
+
+[vlan70.p]
+vlan70.151 ansible_host=192.168.70.151
+vlan70.152 ansible_host=192.168.70.152
+vlan70.153 ansible_host=192.168.70.153
+vlan70.154 ansible_host=192.168.70.154
+vlan70.155 ansible_host=192.168.70.155
+vlan70.156 ansible_host=192.168.70.156
+vlan70.157 ansible_host=192.168.70.157
+vlan70.158 ansible_host=192.168.70.158
+vlan70.159 ansible_host=192.168.70.159
+vlan70.160 ansible_host=192.168.70.160
+
+[vlan70.q]
+vlan70.161 ansible_host=192.168.70.161
+vlan70.162 ansible_host=192.168.70.162
+vlan70.163 ansible_host=192.168.70.163
+vlan70.164 ansible_host=192.168.70.164
+vlan70.165 ansible_host=192.168.70.165
+vlan70.166 ansible_host=192.168.70.166
+vlan70.167 ansible_host=192.168.70.167
+vlan70.168 ansible_host=192.168.70.168
+vlan70.169 ansible_host=192.168.70.169
+vlan70.170 ansible_host=192.168.70.170
+
+[vlan70.r]
+vlan70.171 ansible_host=192.168.70.171
+vlan70.172 ansible_host=192.168.70.172
+vlan70.173 ansible_host=192.168.70.173
+vlan70.174 ansible_host=192.168.70.174
+vlan70.175 ansible_host=192.168.70.175
+vlan70.176 ansible_host=192.168.70.176
+vlan70.177 ansible_host=192.168.70.177
+vlan70.178 ansible_host=192.168.70.178
+vlan70.179 ansible_host=192.168.70.179
+vlan70.180 ansible_host=192.168.70.180
+
+[vlan70.s]
+vlan70.181 ansible_host=192.168.70.181
+vlan70.182 ansible_host=192.168.70.182
+vlan70.183 ansible_host=192.168.70.183
+vlan70.184 ansible_host=192.168.70.184
+vlan70.185 ansible_host=192.168.70.185
+vlan70.186 ansible_host=192.168.70.186
+vlan70.187 ansible_host=192.168.70.187
+vlan70.188 ansible_host=192.168.70.188
+vlan70.189 ansible_host=192.168.70.189
+vlan70.190 ansible_host=192.168.70.190
+
+[vlan70.t]
+vlan70.191 ansible_host=192.168.70.191
+vlan70.192 ansible_host=192.168.70.192
+vlan70.193 ansible_host=192.168.70.193
+vlan70.194 ansible_host=192.168.70.194
+vlan70.195 ansible_host=192.168.70.195
+vlan70.196 ansible_host=192.168.70.196
+vlan70.197 ansible_host=192.168.70.197
+vlan70.198 ansible_host=192.168.70.198
+vlan70.199 ansible_host=192.168.70.199
+vlan70.200 ansible_host=192.168.70.200
+
+[vlan70.u]
+vlan70.201 ansible_host=192.168.70.201
+vlan70.202 ansible_host=192.168.70.202
+vlan70.203 ansible_host=192.168.70.203
+vlan70.204 ansible_host=192.168.70.204
+vlan70.205 ansible_host=192.168.70.205
+vlan70.206 ansible_host=192.168.70.206
+vlan70.207 ansible_host=192.168.70.207
+vlan70.208 ansible_host=192.168.70.208
+vlan70.209 ansible_host=192.168.70.209
+vlan70.210 ansible_host=192.168.70.210
+
+[vlan70.v]
+vlan70.211 ansible_host=192.168.70.211
+vlan70.212 ansible_host=192.168.70.212
+vlan70.213 ansible_host=192.168.70.213
+vlan70.214 ansible_host=192.168.70.214
+vlan70.215 ansible_host=192.168.70.215
+vlan70.216 ansible_host=192.168.70.216
+vlan70.217 ansible_host=192.168.70.217
+vlan70.218 ansible_host=192.168.70.218
+vlan70.219 ansible_host=192.168.70.219
+vlan70.220 ansible_host=192.168.70.220
+
+[vlan70.w]
+vlan70.221 ansible_host=192.168.70.221
+vlan70.222 ansible_host=192.168.70.222
+vlan70.223 ansible_host=192.168.70.223
+vlan70.224 ansible_host=192.168.70.224
+vlan70.225 ansible_host=192.168.70.225
+vlan70.226 ansible_host=192.168.70.226
+vlan70.227 ansible_host=192.168.70.227
+vlan70.228 ansible_host=192.168.70.228
+vlan70.229 ansible_host=192.168.70.229
+vlan70.230 ansible_host=192.168.70.230
+
+[vlan70.x]
+vlan70.231 ansible_host=192.168.70.231
+vlan70.232 ansible_host=192.168.70.232
+vlan70.233 ansible_host=192.168.70.233
+vlan70.234 ansible_host=192.168.70.234
+vlan70.235 ansible_host=192.168.70.235
+vlan70.236 ansible_host=192.168.70.236
+vlan70.237 ansible_host=192.168.70.237
+vlan70.238 ansible_host=192.168.70.238
+vlan70.239 ansible_host=192.168.70.239
+vlan70.240 ansible_host=192.168.70.240
+
+[vlan70.y]
+vlan70.241 ansible_host=192.168.70.241
+vlan70.242 ansible_host=192.168.70.242
+vlan70.243 ansible_host=192.168.70.243
+vlan70.244 ansible_host=192.168.70.244
+vlan70.245 ansible_host=192.168.70.245
+vlan70.246 ansible_host=192.168.70.246
+vlan70.247 ansible_host=192.168.70.247
+vlan70.248 ansible_host=192.168.70.248
+vlan70.249 ansible_host=192.168.70.249
+vlan70.250 ansible_host=192.168.70.250
+vlan70.251 ansible_host=192.168.70.251
+vlan70.252 ansible_host=192.168.70.252
+vlan70.253 ansible_host=192.168.70.253
+vlan70.254 ansible_host=192.168.70.254
+
+
+[vlan80:children]
+vlan80.a
+vlan80.b
+vlan80.c
+vlan80.d
+vlan80.e
+vlan80.f
+vlan80.g
+vlan80.h
+vlan80.i
+vlan80.j
+vlan80.k
+vlan80.l
+vlan80.n
+vlan80.m
+vlan80.o
+vlan80.p
+vlan80.q
+vlan80.r
+vlan80.s
+vlan80.t
+vlan80.u
+vlan80.v
+vlan80.w
+vlan80.x
+vlan80.y
+vlan80.a
+vlan80.b
+vlan80.c
+vlan80.d
+vlan80.e
+vlan80.f
+vlan80.g
+vlan80.h
+vlan80.i
+vlan80.j
+vlan80.k
+vlan80.l
+vlan80.n
+vlan80.m
+vlan80.o
+vlan80.p
+vlan80.q
+vlan80.r
+vlan80.s
+vlan80.t
+vlan80.u
+vlan80.v
+vlan80.w
+vlan80.x
+vlan80.y
 
 [vlan80.a]
 vlan80.1 ansible_host=192.168.80.1
@@ -3344,4 +3645,5 @@ vlan80.251 ansible_host=192.168.80.251
 vlan80.252 ansible_host=192.168.80.252
 vlan80.253 ansible_host=192.168.80.253
 vlan80.254 ansible_host=192.168.80.254
+
 
