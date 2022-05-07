@@ -1,0 +1,53 @@
+- hosts: "{{ target | default('test') }}"
+  order: inventory
+  become: no
+  gather_facts: yes
+
+  vars:
+    # vault_file: "/path/to/your/vault.yml"
+    #
+    # mysql_databases:
+    #   - name: example
+    #     collation: utf8_general_ci
+    #     encoding: utf8
+    #     replicate: 1
+    #
+    # mysql_users:
+    #   - name: example
+    #     host: 127.0.0.1
+    #     password: secret
+    #     priv: *.*:USAGE
+
+  pre_tasks:
+    - include_vars: "{{ vault_file }}"
+      when: vault_file is defined
+
+  tasks:
+    - name: MySQL Admin
+      when: mysql_role == "master"
+      block:
+
+        # Check your ~/.my.cnf file for login credentials
+        - name: Make sure you have admin permission
+          mysql_info:
+            filter: version
+
+        - name: Create MySQL Databases
+          mysql_db:
+            name: "{{ item.name }}"
+            collation: "{{ item.collation | default('utf8mb4_unicode_ci') }}"
+            encoding: "{{ item.encoding | default('utf8mb4') }}"
+            state: "{{ item.state | default('present') }}"
+          with_items: "{{ mysql_databases }}"
+
+        - name: Create MySQL Users
+          mysql_user:
+            name: "{{ item.name }}"
+            host: "{{ item.host | default('localhost') }}"
+            password: "{{ item.password }}"
+            priv: "{{ item.priv | default('*.*:USAGE') }}"
+            state: "{{ item.state | default('present') }}"
+            append_privs: "{{ item.append_privs | default('no') }}"
+            encrypted: "{{ item.encrypted | default('no') }}"
+          with_items: "{{ mysql_users }}"
+          no_log: true
