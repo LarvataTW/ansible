@@ -1,0 +1,40 @@
+- hosts: "{{ target | default('test') }}"
+  order: inventory
+
+  vars:
+    database_host: "{{ database_host }}"
+    database_name: "{{ database_name }}"
+    database_user: "{{ database_user }}"
+    database_password: "{{ database_password }}"
+    backup_directory: "{{ backup_directory }}"
+    backup_days: "{{ backup_days }}"
+
+  pre_tasks:
+    - name: Check if mysqldump exists
+      shell: echo 'nothing'
+
+  tasks:
+    - name: Dump MySQL Databases
+      shell: |
+        mysqldump \
+          -p{{ database_password }} \
+          -u {{ database_user }} \
+          -h {{ database_host }} \
+          --routines \
+          --triggers \
+          --skip-lock-tables \
+          --single-transaction \
+          {{ database_name }} | gzip > {{ backup_directory }}/{{ database_name }}_{{ ansible_date_time.date }}_{{ ansible_date_time.time | replace(':','') }}.sql.gz
+
+    - name: Find files to delete
+      find:
+        path: "{{ backup_directory }}"
+        age: "{{ backup_days }}"
+        patterns: '*.sql.gz'
+      register: filestodelete
+
+    - name: Delete files
+      file:
+        path: "{{ item.path }}"
+        state: absent
+      with_items: "{{ filestodelete.files  }}"
