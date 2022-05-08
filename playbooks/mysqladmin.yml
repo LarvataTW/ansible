@@ -27,9 +27,10 @@
       when: mysql_role == "master"
       block:
 
-        # Check your ~/.my.cnf file for login credentials
         - name: Make sure you have admin permission
           mysql_info:
+            login_user: "{{ admin_user }}"
+            login_password: "{{ admin_password }}"
             filter: version
 
         - name: Create MySQL Databases
@@ -38,6 +39,8 @@
             collation: "{{ item.collation | default('utf8mb4_unicode_ci') }}"
             encoding: "{{ item.encoding | default('utf8mb4') }}"
             state: "{{ item.state | default('present') }}"
+            login_user: "{{ admin_user }}"
+            login_password: "{{ admin_password }}"
           with_items: "{{ mysql_databases }}"
 
         - name: Create MySQL Users
@@ -49,5 +52,7 @@
             state: "{{ item.state | default('present') }}"
             append_privs: "{{ item.append_privs | default('no') }}"
             encrypted: "{{ item.encrypted | default('no') }}"
+            login_user: "{{ admin_user }}"
+            login_password: "{{ admin_password }}"
           with_items: "{{ mysql_users }}"
           no_log: true
