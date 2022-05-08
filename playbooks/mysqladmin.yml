@@ -46,7 +46,7 @@
         - name: Create MySQL Users
           mysql_user:
             name: "{{ item.name }}"
-            host: "{{ item.host | default('localhost') }}"
+            host: "{{ item.host | default('%') }}"
             password: "{{ item.password }}"
             priv: "{{ item.priv | default('*.*:USAGE') }}"
             state: "{{ item.state | default('present') }}"
